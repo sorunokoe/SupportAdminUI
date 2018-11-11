@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    title Jade
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='../css/rainbow.css')  
+  body
+    div(class='main')
+      div(class='circle-div')
+        h1 Support Admin
+        h2 Welcome to Support Admin
+        div(id='gSignInWrapper')
+          div(id='googleBtn' class='customGPlusSignIn')
+            span(class='icon')
+            span(class='buttonText') Sign in with Google
+        p or
+        div(class='forms')
+          input(type='email' placeholder='Email')
+          input(type='password' placeholder='Password')
+          button(type='submit') Sign in
+        div(class='actions-div')
+          a(href='#') forgot password
+          a(href='#') sign up

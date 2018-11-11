@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    title Jade
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='../css/deux_signin.css')  
+  body
+    div(class='main') 
+      div(class='header')
+        h1 Support Admin
+      div(class='block-div')
+        h2 Welcome to Support Admin
+        div(class='options-div')
+          div(class='signin-div')
+            div(class='forms')
+              input(type='email' placeholder='Email')
+              input(type='password' placeholder='Password')
+              button(type='submit') Sign in
+            div(class='actions-div')
+              a(href='#') Forgot password
+              a(href='#') Sign up
+          p or
+          div(id='gSignInWrapper')
+            div(id='googleBtn' class='customGPlusSignIn')
+              span(class='icon')
+              span(class='buttonText') Sign in with Google

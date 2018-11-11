@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+// Font Variables
+$roboto: 'Roboto', sans-serif;
+
+
+
+$lightBlue: #42D4F4;
+$darkBlue: #5586DA;
+$btn: #5F97F6;
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: $roboto;
+  text-align:center;
+  .main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-5deg, $lightBlue, $darkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle-div{
+      width: 700px;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(255,255,255,0.1);
+      border-radius: 350px;
+      h1{
+        color:white;
+        font-weight: 300;
+        font-size: 3em;
+      }
+      h2{
+        margin-top: 30px;
+        color:white;
+        font-weight: 300;
+        font-size: 1.5em;
+      }
+      p{
+        color:white;
+        font-size: 1em;
+        font-weight: normal;
+        margin-top: 15px;
+      }
+      .forms{
+        display: flex;
+        flex-direction: column;
+        width:350px;
+        align-items: center;
+        input{
+          border-radius: 3;
+          background: rgba(255,255,255,0.15);
+          color:white;
+          border: none;
+          font-size: 18px;
+          font-weight: normal;
+          height: 40px;
+          width: 320px;
+          margin-top: 15px;
+          padding-left: 15px;
+          outline: none;
+        }
+        input::placeholder {
+            color: white;
+            opacity: 1;
+        }
+        p{
+          margin-top: 15px;
+          color:white;
+          font-size: 1em;
+          font-weight: lighter;
+        }
+        button{
+          margin-top: 15px;
+          width:240px;
+          height: 40px;
+          font-size: 1em;
+          border-radius: 3px;
+          box-shadow: 0 0 2px rgba(0,0,0,0.3);
+          color: white;
+          background:$btn;
+          border: none;
+          outline:none;
+        }
+      }
+      #gSignInWrapper{
+        cursor: pointer;
+        margin-top: 30px;
+          .customGPlusSignIn{
+            background: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            box-shadow: 0 0 2px rgba(0,0,0,0.3);
+            border-radius: 3px;
+            span.icon{
+              width: 30px;
+              height: 30px;
+              background: url('../img/google-logo.png');
+              background-size: cover;
+            }
+            span.buttonText{
+              margin-left: 15px;
+              color:#509DE2;
+              font-size: 18px;
+            }
+          }
+      }
+      .actions-div{
+        margin-top: 30px;
+        display: flex;
+        justify-content:space-between;
+        width: 420px;
+        a{
+          color:white;
+          text-decoration: none;
+          font-size: 24;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
