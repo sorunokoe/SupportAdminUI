@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+  body .main {
+    width: 100vw;
+    height: 100vh;
+    background: #fafafa;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    body .main .header {
+      background: linear-gradient(90deg, #4285F4, #5586DA);
+      width: 100vw;
+      height: 70px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 50px; }
+      body .main .header h1 {
+        color: white;
+        font-size: 1.5em;
+        font-weight: 300; }
+    body .main .block-div {
+      height: 500px;
+      width: 70%;
+      margin-top: 50px;
+      margin-left: 15%;
+      margin-right: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+      body .main .block-div h2 {
+        color: #7E7E7E;
+        font-weight: 300;
+        font-size: 2em; }
+      body .main .block-div p {
+        color: #7E7E7E;
+        font-size: 1em;
+        font-weight: normal;
+        margin-top: 15px; }
+      body .main .block-div .options-div {
+        width: 80%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        body .main .block-div .options-div .signin-div {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          body .main .block-div .options-div .signin-div .forms {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            align-items: center; }
+            body .main .block-div .options-div .signin-div .forms input {
+              border-radius: 3;
+              background: #E9F0FB;
+              color: white;
+              border: none;
+              font-size: 18px;
+              font-weight: normal;
+              height: 40px;
+              width: 320px;
+              margin-top: 15px;
+              padding-left: 15px;
+              outline: none; }
+            body .main .block-div .options-div .signin-div .forms input::placeholder {
+              color: #7E7E7E;
+              opacity: 1; }
+            body .main .block-div .options-div .signin-div .forms button {
+              margin-top: 15px;
+              width: 240px;
+              height: 40px;
+              font-size: 1em;
+              border-radius: 3px;
+              box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+              color: white;
+              background: #5F97F6;
+              border: none;
+              outline: none; }
+          body .main .block-div .options-div .signin-div .actions-div {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 420px; }
+            body .main .block-div .options-div .signin-div .actions-div a {
+              margin-top: 10px;
+              color: #4285F4;
+              text-decoration: none;
+              font-size: 24;
+              font-weight: 500; }
+        body .main .block-div .options-div #gSignInWrapper {
+          cursor: pointer;
+          margin-top: 30px; }
+          body .main .block-div .options-div #gSignInWrapper .customGPlusSignIn {
+            background: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #4285F4;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+            border-radius: 3px; }
+            body .main .block-div .options-div #gSignInWrapper .customGPlusSignIn span.icon {
+              width: 30px;
+              height: 30px;
+              background: url("../img/google-logo.png");
+              background-size: cover;
+              background-color: white; }
+            body .main .block-div .options-div #gSignInWrapper .customGPlusSignIn span.buttonText {
+              margin-left: 15px;
+              color: white;
+              font-weight: 300px;
+              font-size: 18px; }
+
+/*# sourceMappingURL=deux_signin.css.map */
